@@ -31,5 +31,5 @@ df = pd.DataFrame(
 )
 edited_df = st.data_editor(df)
 
-if st.button("Clique aqui!"):
+if st.button("Balões"):
     st.balloons()
