@@ -10,8 +10,7 @@ st.selectbox(
   ('Azul','Vermelho','Verde'))
 st.multiselect(
   'Quais são suas cores favoritas?',
-  ['Verde','Amarelo','Vermelho','Azul'],
-  ['Amarelo','Vermelho'])
+  ['Verde','Amarelo','Vermelho','Azul'])
 
 st.checkbox('Sorvete')
 st.checkbox('Café')
