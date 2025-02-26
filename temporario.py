@@ -28,26 +28,3 @@ df = pd.DataFrame(
   ]
 )
 edited_df = st.data_editor(df)
-
-class BalloonsMixin:
-    @gather_metrics("balloons")
-    def balloons(self) -> DeltaGenerator:
-        """Draw celebratory balloons.
-
-        Example
-        -------
-        >>> import streamlit as st
-        >>>
-        >>> st.balloons()
-
-        ...then watch your app and get ready for a celebration!
-
-        """
-        balloons_proto = BalloonsProto()
-        balloons_proto.show = True
-        return self.dg._enqueue("balloons", balloons_proto)
-
-    @property
-    def dg(self) -> DeltaGenerator:
-        """Get our DeltaGenerator."""
-        return cast("DeltaGenerator", self)
