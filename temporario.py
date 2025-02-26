@@ -29,18 +29,6 @@ df = pd.DataFrame(
 )
 edited_df = st.data_editor(df)
 
-
-from __future__ import annotations
-
-from typing import TYPE_CHECKING, cast
-
-from streamlit.proto.Balloons_pb2 import Balloons as BalloonsProto
-from streamlit.runtime.metrics_util import gather_metrics
-
-if TYPE_CHECKING:
-    from streamlit.delta_generator import DeltaGenerator
-
-
 class BalloonsMixin:
     @gather_metrics("balloons")
     def balloons(self) -> DeltaGenerator:
