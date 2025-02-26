@@ -15,3 +15,6 @@ st.multiselect(
 st.checkbox('Sorvete')
 st.checkbox('Café')
 st.checkbox('Refrigerante')
+
+st.color_picker("Pick a Color", "#00f900")
+st.feedback("stars")
