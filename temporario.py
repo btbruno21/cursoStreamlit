@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import Balloons as BalloonsProto
 
 st.button("Botão Salvar")
 st.toggle("Toggle")
@@ -28,3 +29,5 @@ df = pd.DataFrame(
   ]
 )
 edited_df = st.data_editor(df)
+
+st.balloons()
