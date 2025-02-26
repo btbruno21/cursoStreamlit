@@ -8,3 +8,7 @@ st.text_input("")
 st.selectbox(
   'Qual a sua cor favorita?',
   ('Azul','Vermelho','Verde'))
+st.multiselect(
+  'Quais são suas cores favoritas?',
+  ['Verde','Amarelo','Vermelho','Azul'],
+  ['Amarelo','Vermelho'])
