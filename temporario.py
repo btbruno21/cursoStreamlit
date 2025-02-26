@@ -20,6 +20,8 @@ st.checkbox('Refrigerante')
 st.color_picker("Pick a Color", "#00f900")
 st.feedback("stars")
 
+st.ballons("")
+
 df = pd.DataFrame(
   [
     {"command": "st.selectbox", "rating":4, "is_widget":True},
