@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import Balloons as BalloonsProto
+from streamlit.proto.Balloons_pb2 import Balloons as BalloonsProto
+from streamlit.runtime.metrics_util import gather_metrics
 
 st.button("Botão Salvar")
 st.toggle("Toggle")
