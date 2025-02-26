@@ -31,4 +31,5 @@ df = pd.DataFrame(
 )
 edited_df = st.data_editor(df)
 
-st.balloons()
+if st.button("Clique aqui!"):
+    st.balloons()
