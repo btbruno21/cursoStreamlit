@@ -1,7 +1,7 @@
 import datetime
 import streamlit as st
 
-print("Cadastro de Aluno")
+st.write("Cadastro de Aluno")
 
 st.text_input("Nome:",key="i_1", max_chars=50)
 
