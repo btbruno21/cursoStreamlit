@@ -1,7 +1,7 @@
 import datetime
 import streamlit as st
 
-st.text_input("Nome:")
+st.text_input("Nome:", max_chars=50)
 
 d = st.date_input("Data de nascimento", value=None)
 if d:
