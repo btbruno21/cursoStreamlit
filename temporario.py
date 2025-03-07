@@ -34,4 +34,4 @@ edited_df = st.data_editor(df)
 if st.button("Balões"):
     st.balloons()
 
-st.sidebar("Escolha a operação", ("Cadastrar Cliente", "Cadastrar Pedido", "Visualizar Registros"))
+st.radio("Escolha a operação", ("Cadastrar Cliente", "Cadastrar Pedido", "Visualizar Registros"))
